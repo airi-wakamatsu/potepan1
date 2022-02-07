@@ -181,9 +181,25 @@ img {
     list-style: none;
 
 }
+@media screen and (min-width:768px) {
+    .menu-item {
+        transition: opacity 0.2s;
+    }
+}
+@media screen and (min-width:768px) {
+    .menu-item {
+        opacity: 0.8;
+    }
+}
+@media screen and (max-width:1080px) {
+    .menu-item {
+        margin-right: 0;
+    }
+}
+    
+
 .menu-item a {
     display: block;
-    width: 100%;
     font-size: 15px;
     box-sizing: border-box;
     text-decoration: none;
@@ -438,6 +454,7 @@ img {
 @media screen and (max-width:767px) {
     .FirstViewContent_images img{
     width: 27.5%;
+    }
 }
 
 .FirstViewContent_images img:nth-of-type(2) {
@@ -608,6 +625,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
+    width: 53%;
 }
 @media screen and (max-width:1024px) {
     .About_title {
@@ -621,19 +640,25 @@ img {
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+.About_title h2 {
     word-break: break-all;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 .About_title h2 {
+    line-height: 74px;
+    font-weight: 700;
+}
+.About_title h2  {
+    color: #fff;
+    text-align: left;
+}
+.About_title h2 {
     font-size: 40px;
     letter-spacing: 1px;
     width: 100%;
-    line-height: 74px;
-    font-weight: 700;
-    color: #fff;
-    text-align: left;
 }
 @media screen and (max-width:767px) {
     .About_title h2 {
@@ -686,6 +711,8 @@ img {
 .About_title p {
     color: #fff;
     text-align: left;
+}
+.About_title p {
     font-size: 16px;
     font-weight: 700;
     line-height: 26px;
